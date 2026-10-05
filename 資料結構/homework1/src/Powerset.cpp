@@ -3,29 +3,30 @@
 #include<algorithm>
 using namespace std;
 
-// str­ì©l¿é¤J¦r¦ê	index·í«e³B²z¨ì²Ä´X­Ó¦r¤¸	current·í«e²Õ¦X¥X¨Óªº¤l¶°¦r¦ê
+// stråŸå§‹è¼¸å…¥å­—ä¸²	indexç•¶å‰è™•ç†åˆ°ç¬¬å¹¾å€‹å­—å…ƒ	currentç•¶å‰çµ„åˆå‡ºä¾†çš„å­é›†å­—ä¸²
 void powerset(string& str,int index,string current) {
-    // ·í³B²z§¹©Ò¦³¦r¤¸¡A¦L¥X·í«e¤l¶°
+    // ç•¶è™•ç†å®Œæ‰€æœ‰å­—å…ƒï¼Œå°å‡ºç•¶å‰å­é›†
     if (index==str.length()){
         cout<<"("<<current<<") ";
         return;
     }
 
-    //¤£¿ï¾Ü·í«e¦r¤¸
+    //ä¸é¸æ“‡ç•¶å‰å­—å…ƒ
     powerset(str,index+1, current);
 
-    //¿ï¾Ü·í«e¦r¤¸ (±N¦r¤¸¥[¨ì current «á­±)
+    //é¸æ“‡ç•¶å‰å­—å…ƒ (å°‡å­—å…ƒåŠ åˆ° current å¾Œé¢)
     powerset(str,index+1,current+str[index]);
 }
 
 int main() {
     string S="";
-	cout<<"S(¤£¶·¶¡¹j) = ";
+	cout<<"S(ä¸é ˆé–“éš”) = ";
 	cin>>S;
 		
-    sort(S.begin(),S.end());	// ±Æ§Ç
+    sort(S.begin(),S.end());	// æ’åº
     cout<<"powerset(S) = ";
-    powerset(S,0,"");	//¶Ç¤J°}¦C¡B¶}©l³B²z¦ì¤l¡BªÅ¦r¦ê(¬ö¿ıµ²ªG) 
+    powerset(S,0,"");	//å‚³å…¥é™£åˆ—ã€é–‹å§‹è™•ç†ä½å­ã€ç©ºå­—ä¸²(ç´€éŒ„çµæœ) 
 
+	
     return 0;
 }
