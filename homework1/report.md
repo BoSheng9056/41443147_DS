@@ -1,5 +1,5 @@
-# 作業一：阿克曼函數（Ackermann Function）計算
-
+#41443147
+## 作業一：阿克曼函數（Ackermann Function）計算
 ## 解題說明
 
 ### 問題描述
@@ -152,7 +152,7 @@ int main() {
 --------
 
 
-# 作業二：冪集（Power Set）
+## 作業二：冪集（Power Set）
 
 ## 解題說明
 
