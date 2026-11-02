@@ -12,7 +12,7 @@
 
 1. 使用動態記憶體配置
     - 使用termArray存非零項，當原儲存空間(capacity=4)不夠使用時，執行newTerm()，用意是將原儲存空間(capacity)*2，增加兩倍，後透過copy把原本的資料複製到新的termArray裡。
-    - 
+
 
 ## 程式實作
 
