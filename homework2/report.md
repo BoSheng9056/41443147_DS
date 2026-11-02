@@ -280,7 +280,7 @@ int main(){
 | ---------- | ------------ | -------- | -------- |
 | newTerm()  | $n = 0$      | 0        | 0        |
 | Add()      | $O(m+n)$     | 1        | 1        |
-| Mult()     | $O(mxnxk)$   | 6        | 6        |
+| Mult()     | $O(m * n * k)$   | 6        | 6        |
 | Eval()     | $O(nlog E)$  | 6        | 6        |
 | operator>> | $O(n)$       | 6        | 6        |
 | operator<< | $O(n)$       | 6        | 6        |
