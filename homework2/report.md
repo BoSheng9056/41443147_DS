@@ -14,7 +14,7 @@
 - 使用termArray存非零項，當原儲存空間(capacity=4)不夠使用時，執行newTerm()，用意是將原儲存空間(capacity)*2，增加兩倍，後透過copy把原本的資料複製到新的termArray裡。
 #### 2.運算子多載與串流處理
 - 利用 $is >> ws$先自動清除輸入的空白跟換行，再透過 getline 讀入整行文字
-- 
+- 將文字轉為 stringstream ，利用$ss >> coef >> exp$迴圈持續讀入"係數"、"指數"，並且呼叫 newTerm() 建立多項式。
 
 ## 程式實作
 
