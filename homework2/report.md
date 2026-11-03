@@ -302,7 +302,6 @@ int main(){
 ```shell
 $ g++ -std=c++11 -O2 Polynomial.cpp -o Polynomial.exe
 $ Polynomial.exe
-6
 ```
 
 
